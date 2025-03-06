@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3f9d8"
+    tools:context=".model.MainActivity">
+
+    <!-- Background with gradient -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/gradientBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gradient_background" />
+
+    <!-- Container for the content -->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"
+        android:background="@android:color/white"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <!-- Title text -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Selamat Datang di NANABUNG!"
+            android:textAlignment="center"
+            android:textColor="#4CAF50"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+
+        <!-- Description text -->
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:lineSpacingExtra="8dp"
+            android:text="Selamat datang di platform pengelolaan tabungan kami. Kami menawarkan cara mudah, cepat, dan aman untuk mengatur tabungan Anda. Ayo mulai perjalanan tabungan Anda!"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <!-- Start Button -->
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_style"
+            android:onClick="onStartButtonClick"
+            android:text="Mulai Tabungan"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <!-- Footer text -->
+        <TextView
+            android:id="@+id/footerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="© 2025 Tabungan - Semua Hak Dilindungi | Logout"
+            android:textAlignment="center"
+            android:textColor="#795548"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#e0f7e0"
+    android:gravity="center">
+
+    <!-- Title Section -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Daftar"
+        android:textSize="24sp"
+        android:textColor="#2c6e2f"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <!-- Email Field -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textColor="#2c6e2f"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"
+        android:textColor="#2c6e2f"
+        android:layout_marginBottom="16dp"
+        android:importantForAccessibility="yes"/>
+
+    <!-- Password Field -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textColor="#2c6e2f"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"
+        android:textColor="#2c6e2f"
+        android:layout_marginBottom="16dp"
+        android:importantForAccessibility="yes"/>
+
+    <!-- Phone Number Field -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No HP:"
+        android:textColor="#2c6e2f"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor HP"
+        android:inputType="phone"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"
+        android:textColor="#2c6e2f"
+        android:layout_marginBottom="16dp"
+        android:importantForAccessibility="yes"/>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR"
+        android:textColor="#ffffff"
+        android:background="#2c6e2f"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Forgot Password Button (Optional) -->
+    <Button
+        android:id="@+id/forgotPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lupa Password?"
+        android:textColor="#D32F2F"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Back Button (Optional) -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:textColor="#ffffff"
+        android:background="#2c6e2f"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

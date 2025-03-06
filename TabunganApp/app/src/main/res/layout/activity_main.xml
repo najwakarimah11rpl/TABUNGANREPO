@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6DABA5"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00796b"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="Tabungin Logo"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NANABUNG"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Hero Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/heroHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang di NANABUNG!"
+            android:textColor="#ffffff"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/heroSubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Menabung dengan Keamanan dan Kemudahan Terjamin, Hidup Lebih Keren!"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/ctaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:background="#ff5722"
+            android:padding="16dp"
+            android:text="Mulai Menabung Sekarang!" />
+    </LinearLayout>
+
+    <!-- Features Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Fitur Unggulan Tabungin"
+            android:textColor="#00796b"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Feature 1: Investasi Pintar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Investasi Pintar"
+                android:src="@drawable/lock_24" /> <!-- Replace with actual icon -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Investasi Pintar"
+                android:textColor="#00796b"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Feature 2: Notifikasi Real-Time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Notifikasi Real-Time"
+                android:src="@drawable/lock_24" /> <!-- Replace with actual icon -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notifikasi Real-Time"
+                android:textColor="#00796b"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Feature 3: Pengelolaan Keuangan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Pengelolaan Keuangan"
+                android:src="@drawable/lock_24" /> <!-- Replace with actual icon -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengelolaan Keuangan"
+                android:textColor="#00796b"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Feature 4: Keamanan Terjamin -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Keamanan Terjamin"
+                android:src="@drawable/lock_24" /> <!-- Replace with actual icon -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keamanan Terjamin"
+                android:textColor="#00796b"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Feature 5: Bebas Biaya Admin -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Bebas Biaya Admin"
+                android:src="@drawable/lock_24" /> <!-- Replace with actual icon -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bebas Biaya Admin"
+                android:textColor="#00796b"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Footer Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6B9B95"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="; 2025 Tabungin. Semua hak cipta dilindungi."
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingEnd="15dp"
+                android:text="Syarat dan Ketentuan"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingEnd="15dp"
+                android:text="Kebijakan Privasi"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Kontak"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
